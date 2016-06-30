@@ -1,0 +1,36 @@
+extends layout
+
+block content
+    section#page-breadcrumb
+        .vertical-center.sun
+            .container
+                .row
+                    .action
+                        .col-sm-12
+                            h1.title Contact Us
+                            p Stay close
+    section#map-section
+        .container
+            div#gmap
+            div.contact-info
+                h2 Contacts
+                address
+                    | E-mail: 
+                    a(href='mailto:info@youremail.com') info@youremail.com
+                    br
+                    | Phone: +1 (123) 456 7890 
+                    br
+                    | Fax: +1 (123) 456 7891
+                    br
+                h2 Address
+                address
+                    | Unit C2, St.Vincent's Trading Est., 
+                    br
+                    | Feeder Road, 
+                    br
+                    | Bristol, BS2 0UY 
+                    br
+                    | United Kingdom 
+                    br
+    script(type='text/javascript', src='http://maps.google.com/maps/api/js?sensor=true')
+    script(type='text/javascript', src='./js/gmaps.js')
